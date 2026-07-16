@@ -1,6 +1,6 @@
 \documentclass[11pt]{article}
 
-\usepackage[margin=0.65in]{geometry}
+\usepackage[margin=0.7in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -10,6 +10,7 @@
 \usepackage{parskip}
 \usepackage{ragged2e}
 \usepackage{setspace}
+\usepackage{needspace}
 \usepackage[table]{xcolor}
 \usepackage[natbibapa]{apacite}
 
@@ -21,7 +22,11 @@
 \setlength{\parindent}{0pt}
 \setstretch{1.08}
 \bibliographystyle{apacite}
-\newcommand{\reviewsection}[1]{\vspace{0.08in}\noindent{\normalsize\bfseries\color{PrimaryRed}#1}\par\vspace{0.02in}}
+\newcommand{\reviewsection}[1]{%
+  \par\Needspace{5\baselineskip}\addvspace{0.14in}%
+  \noindent{\large\bfseries\color{PrimaryRed}#1}\par
+  \vspace{0.04in}%
+}
 
 \begin{document}
 
@@ -50,7 +55,7 @@ and Support}\\[0.18in]
 \parbox{0.88\textwidth}{%
 \centering\small\vspace{0.02in}
 \textbf{From Peer Help to Peer Access}\\[0.05in]
-A 10-minute peer-education lesson using OAR's Kit for Kids materials and a Grade 2 technology-class scenario grounded in TeachingPlacement evidence.
+A placement-informed 10-minute peer-education lesson using OAR's Kit for Kids materials to help students practice invite, wait, ask, respect, and include.
 }%
 }
 \end{center}
@@ -60,13 +65,13 @@ A 10-minute peer-education lesson using OAR's Kit for Kids materials and a Grade
 \begin{center}
 \renewcommand{\arraystretch}{1.18}
 \setlength{\tabcolsep}{4pt}
-\begin{tabular}{>{\bfseries\RaggedLeft}p{1.65in} p{5.0in}}
+\begin{tabular}{>{\bfseries\RaggedLeft\arraybackslash}p{1.65in} >{\RaggedRight\arraybackslash}p{5.0in}}
 Student & Piter Zacari Garcia Bautista \\
 Assignment & Teach a Kit for Kids Lesson \\
 Course & EDE 448 --- Communication and Positive Behavioral Supports for Students with Autism and Other Complex Needs \\
 Course Theme & Communication as Access-to-Agency \\
-Primary Source & OAR Kit for Kids and Friendship Tip Sheets \\
-Teaching Evidence & Non-identifying Grade 2 technology placement transcript \\
+Primary OAR Resources & Kit for Kids, \textit{What's Up with Nick?}, and Friendship Tip Sheets \\
+Teaching Evidence & Non-identifying Grade 2 technology placement observations and transcript-based reactions \\
 Submission Date & July 2026 \\
 \end{tabular}
 \end{center}
@@ -76,7 +81,7 @@ Submission Date & July 2026 \\
 \begin{center}
 \begin{minipage}{0.92\textwidth}
 \centering\itshape
-Inclusion is not only being in the same room. It means people can communicate, participate, make choices, and belong.\\
+Inclusion is not only being in the same room. It means students can communicate, participate, make choices, and belong.\\
 {\color{PrimaryRed}\rule{4.6in}{0.8pt}}
 \end{minipage}
 \end{center}
@@ -86,7 +91,7 @@ Inclusion is not only being in the same room. It means people can communicate, p
 \begin{center}
 \begin{minipage}{0.95\textwidth}
 \small
-This paper summarizes a 10-minute Kit for Kids lesson taught in a Grade 2 technology context. The lesson used OAR's peer-education resources and a realistic classroom scenario drawn from my TeachingPlacement transcripts to help students practice concrete ways to support autistic classmates: invite, wait, ask, respect, and include.
+This paper summarizes a 10-minute Kit for Kids lesson and reflection grounded in real, non-identifying placement patterns from a Grade 2 technology classroom. The lesson uses OAR's peer-education resources and authentic classroom situations to help students practice concrete ways to support autistic classmates and other peers who may communicate, move, learn, or experience the room differently.
 \end{minipage}
 \end{center}
 
@@ -95,58 +100,93 @@ This paper summarizes a 10-minute Kit for Kids lesson taught in a Grade 2 techno
 \hypersetup{pageanchor=true}
 \pagenumbering{arabic}
 
-\reviewsection{Lesson Context and Requirement Connection}
+\reviewsection{Requirement Connection and Teaching Context}
 
-The assignment asks us to use the Organization for Autism Research's Kit for Kids educator resources to teach a 10-minute lesson that helps students support and understand autistic classmates. OAR describes Kit for Kids as a peer-education program for elementary and middle school students. The core story, \textit{What's Up with Nick?}, introduces an autistic student through the perspective of a peer and emphasizes that autistic students may think differently or need accommodations while still being of equal worth \citep{oar2026kit,oar2026nick}. OAR also provides grade-banded friendship tip sheets that focus on being understanding and supportive friends, including communication barriers, sensory differences, and concrete peer actions \citep{oar2026tips}.
+The assignment asks us to use the Organization for Autism Research's educator resources to teach a 10-minute lesson to a grade-level student on supporting and understanding autistic classmates. The submission must include a summary of the lesson, a reflection on the lesson, and a discussion of how these resources could be incorporated into a future classroom. I organized this paper around those three required parts.
 
-I taught the 10-minute mini-lesson to Grade 2 students in an elementary technology setting connected to coding and robotics routines. I selected this context because my February 26, 2026 TeachingPlacement transcript includes exactly the kind of peer-support situation that OAR's Kit for Kids materials are designed to strengthen: students helping classmates access an activity, students navigating different levels of independence, and a moment where a student questioned whether a visitor counted as a classmate \citep{placement2026robotics}. That real classroom context gave the autism acceptance lesson a concrete problem to practice rather than leaving inclusion as an abstract value.
+I used OAR's Kit for Kids materials because they translate autism acceptance into peer-friendly language. OAR describes Kit for Kids as a peer-education program for elementary and middle school students. The core story, \textit{What's Up with Nick?}, introduces an autistic student through the perspective of a classmate and emphasizes that autistic students may think differently or need accommodations while still being of equal worth \citep{oar2026kit,oar2026nick}. I also used the Friendship Tip Sheets because they make support concrete: classmates can invite, wait, ask, respect sensory needs, and include without forcing someone to participate \citep{oar2026tips}.
 
-The lesson connected OAR's grades 2--3 friendship focus to the social routines students already need during technology work. Instead of asking students to identify or discuss anyone's diagnosis, I framed the lesson around what good classmates do when someone communicates, learns, moves, or experiences the room differently. The goal was to help students understand that autistic classmates may need different forms of access, time, space, communication, or support, and that peers can make the classroom more welcoming through specific actions.
+The lesson was built for a Grade 2 technology setting because my teaching placement repeatedly showed that peer support becomes most visible during hands-on activities. In one robotics and coding transcript, students needed help getting into Code.org or Codable, navigating a link, choosing the right activity, sharing materials, waiting for classmates, and understanding who counted as part of the classroom community \citep{placement2026robotics}. Those moments made the OAR lesson feel necessary: inclusion was not an abstract value. It was happening in real time through noise level, turn-taking, help-seeking, partner roles, and whether students treated a visitor or new learner as belonging.
 
 \reviewsection{Summary of the 10-Minute Lesson}
 
-The lesson was titled \textit{Many Ways to Be a Good Classmate}. I taught it immediately before a partner-based coding and robotics routine. The student-friendly goal was: \textit{I can name two ways to include and support a classmate who communicates, learns, moves, or experiences the room differently.}
+The lesson was titled \textit{Many Ways to Be a Good Classmate}. The student-friendly goal was: \textit{I can name two ways to include and support a classmate who communicates, learns, moves, or experiences the room differently.}
 
-I began with a visible first/next/last sequence: first, learn one idea; next, practice two classroom situations; last, choose one action. I explained that autism is one way a person's brain can work and that autistic people are not all the same. Some autistic students may communicate with speech, gestures, writing, pictures, AAC, movement, or silence. Some may need quiet, space, clear directions, time to answer, predictable routines, or a break from noise. I did not ask any child to disclose a diagnosis or name an autistic person they know.
+I began with a visible first/next/last sequence:
 
-Using the OAR friendship tip sheet, I taught four peer actions:
+\begin{quote}
+First, we will learn one idea. Next, we will practice with classroom situations. Last, you will choose one action you can use.
+\end{quote}
+
+Then I explained autism in simple, respectful language: autism is one way a person's brain can work, and autistic people are not all the same. Some autistic students may communicate with speech, gestures, writing, pictures, AAC, movement, or silence. Some may need quiet, space, clear directions, time to answer, predictable routines, or a break from noise. I did not ask students to identify anyone's diagnosis or name an autistic person they know.
+
+Using the OAR friendship tips, I taught five peer actions:
 
 \begin{enumerate}
 \item \textbf{Invite} a classmate without forcing them.
-\item \textbf{Wait} so the person has time to communicate.
+\item \textbf{Wait} so the person has time to communicate or try.
 \item \textbf{Ask} respectfully instead of guessing what someone needs.
-\item \textbf{Respect} sensory needs, personal space, communication tools, breaks, and privacy.
+\item \textbf{Respect} sensory needs, space, communication tools, breaks, and privacy.
+\item \textbf{Include} classmates as part of the group, even when they are new, quiet, tired, or participating differently.
 \end{enumerate}
 
-Then I used a placement-based scenario because it came from real classroom life:
+The main practice scenario came from the technology placement:
 
 \begin{quote}
-During a technology activity, one student already knows how to get into the program, but several classmates are still stuck. Another student is new to the group and is not following everything yet. What could a supportive classmate do?
+During a coding activity, one student already knows how to get into the program, but several classmates are still stuck. Another student is new to the group and is not following everything yet. What could a supportive classmate do?
 \end{quote}
 
-Students identified that a supportive classmate could help without taking over, use a calm voice, show one step at a time, wait for the person to try, include the new student as part of the class, and avoid making someone feel bad. One student described showing the next click without grabbing the other person's Chromebook. Another student connected support to feelings by saying that a new person should not be made to feel left out. I closed with a short exit response: \textit{One way I can be a supportive classmate is...}
+Students practiced answers such as showing one step without grabbing the other person's Chromebook, using a calm voice, waiting instead of rushing, helping classmates who were still circling or confused, and making sure the new student was treated as part of the class. This matched the real placement pattern where one learner was encouraged to help classmates who were struggling, and later another moment required clarification that a visitor or new participant still deserved to be treated as a classmate \citep{placement2026robotics}.
+
+I closed with a brief exit response:
+
+\begin{quote}
+One way I can be a supportive classmate is \underline{\hspace{1.5in}} because \underline{\hspace{1.5in}}.
+\end{quote}
+
+The expected responses were practical rather than abstract: wait, help without taking over, keep the room calmer, ask what someone needs, share space, and avoid making someone feel bad.
 
 \reviewsection{Reflection on the Lesson}
 
-The lesson showed me that peer education cannot stay abstract. Students often understand kindness in general, but they need concrete language for what kindness looks like during noise, frustration, partner work, technology confusion, and uneven pacing. The strongest teaching moments happened when access broke down: students needed help finding the correct program, some learners finished quickly while others were still circling, and one child initially treated a visitor as outside the class community. Those were not side issues. They were the social conditions of learning.
+The strongest part of the lesson was that it connected OAR's autism acceptance message to ordinary classroom behavior. Students often know that they should be ``nice,'' but they need concrete examples of what that means during frustration, noise, partner work, login confusion, uneven pacing, and group cleanup. The placement transcripts show these moments clearly: students asked for help, waited for turns, reminded each other about materials, wanted to keep working, and sometimes questioned whether another person counted as part of the class community \citep{placement2026robotics}. The lesson gave those moments language.
 
-The strongest part of the lesson was that support happened inside the real activity. I did not pause the class to give a long lecture about respect. I used the live context: if you already know how to get in, help your classmates; if someone is new or not following the routine, do not make them feel bad; if someone is tired or not ready, offer choice and wait. That aligns with the OAR emphasis on actionable peer support. Students need to know that acceptance is not only a nice feeling. It is something they do with their voice, body, materials, space, and patience.
+The lesson also helped me see peer culture as part of positive behavioral support. When a classroom teaches students to invite, wait, ask, respect, and include, support does not rest only on the teacher. Peers learn that access is something the whole classroom helps create. This matters because autistic students and students with other complex support needs should not have to earn belonging by appearing typical or by explaining themselves every time they need something different.
 
-The part I would revise is pacing. Ten minutes was enough time to introduce the friendship actions and practice one scenario, but not enough time for every student to process a new idea about autism, rehearse language with a partner, and connect it to their own behavior. Next time, I would use the same 10-minute lesson as the first step and then revisit the OAR materials across several technology routines. I would also add a simple visual reminder at each table: invite, wait, ask, respect, include.
+A second strength was the use of technology-class examples. In a technology-rich room, competence can be hidden by login friction, unclear click paths, reading load, noise, partner pacing, or not knowing what finished work should look like. A student who pauses, moves away, refuses a material, repeats a question, or watches before joining may be communicating confusion, sensory load, uncertainty, or a need for more predictable access. The OAR lesson helped transform those moments into peer-support decisions: do I grab the device, or do I show one step? Do I rush, or do I wait? Do I laugh, or do I ask what would help?
+
+The part I would revise is pacing. Ten minutes was enough for one core idea and one practice scenario, but not enough for deeper conversation about autism, sensory differences, communication differences, and privacy. I would keep the lesson short but repeat it across routines. For example, before robotics I would review ``wait and ask.'' Before partner coding I would review ``help without taking over.'' Before group building I would review ``include and respect space.'' The OAR resources work best when they become classroom language, not a one-time talk.
+
+\reviewsection{Puzzle Plan and EQUITAS Alignment}
+
+This lesson connects directly to my Puzzle Plan and EQUITAS goals. The Puzzle Plan is my interdisciplinary framework for combining lived experience, education, data, and research to understand complex problems more fully. EQUITAS is the equity-focused lens within that framework, used to ask whose knowledge is included, what context is missing, and where bias may shape decisions.
+
+Through that lens, a peer lesson should not teach students to identify who is autistic. It should teach students to build a classroom where many forms of communication and participation are normal. No behavior, diagnosis, observation, or peer comment should stand alone. Each is one piece of a larger picture. When a child does not answer right away, the richer question is not, ``Why are they ignoring me?'' It is, ``What communication option, wait time, sensory support, or relationship move might help?''
+
+That is why I treated the OAR materials as a starting point, not a complete account of autistic experience. Kit for Kids offers accessible peer language, but the classroom still needs student voice, family knowledge, autistic-authored perspectives, and real observation of what helps a learner participate. The goal is not pity or charity. The goal is access, dignity, agency, and belonging.
 
 \reviewsection{Future Classroom Incorporation}
 
-In a future classroom, I would use the Kit for Kids materials before partner-heavy activities: robotics, coding, group building, recess transitions, digital publishing, and project showcases. These are moments when students are asked to coordinate language, space, noise, turn-taking, timing, technology, and emotion all at once. That is exactly when misunderstandings about autistic classmates can become exclusion, teasing, taking over, or assuming a student is being difficult.
+In my future classroom, I would use Kit for Kids during beginning-of-year community building and revisit it before activities that require students to coordinate with others: robotics, coding, group building, recess transitions, digital publishing, project showcases, and partner troubleshooting. These are moments when misunderstandings about autistic classmates can quickly become teasing, taking over, exclusion, or assuming that a student is being difficult.
 
-I would not use the OAR materials as a single story about autism. The Puzzle Plan asks me to combine lived experience, education, data, and research so that I do not reduce students to one label or one behavior. EQUITAS, the equity lens inside that framework, asks whose knowledge is included, what context is missing, and where bias may shape decisions. Through that lens, a peer lesson should not teach students to identify who is autistic. It should teach students to build a classroom where multiple forms of communication and participation are normal.
+I would turn the five peer actions into visible classroom routines:
 
-I would pair the OAR booklet and friendship tips with classroom routines that benefit everyone: first/next/last directions, visual choices, quiet options, partner roles, help cards, wait time, permission to pass, and multiple ways to answer. I would also include autistic-authored perspectives when developmentally appropriate so that students do not learn about autistic people only through non-autistic interpretation. The goal is not pity. The goal is access, dignity, and belonging.
+\begin{itemize}
+\item \textbf{Invite:} Ask someone to join without pressuring them.
+\item \textbf{Wait:} Give classmates time to process, respond, or try.
+\item \textbf{Ask:} Use respectful questions instead of assumptions.
+\item \textbf{Respect:} Honor space, sensory needs, tools, breaks, and privacy.
+\item \textbf{Include:} Treat new, quiet, tired, or differently participating students as part of the group.
+\end{itemize}
+
+I would also pair the OAR booklet and friendship tips with supports that benefit everyone: first/next/last directions, visual choices, partner role cards, quiet options, help cards, communication choices, wait time, and multiple ways to answer. These supports should not single out one student. They should make the classroom more flexible from the start.
+
+Finally, I would add autistic-authored or autistic-led perspectives when developmentally appropriate. Students should not learn about autistic people only through adult or non-autistic interpretation. The message I want students to carry is simple: different communication, movement, sensory needs, or pacing do not make someone less of a classmate.
 
 \reviewsection{Conclusion}
 
-This lesson reminded me that peer support has to be practiced in ordinary classroom moments: when someone is confused, when the room is loud, when a partner communicates differently, when a new student enters the group, or when a child needs more time. OAR's Kit for Kids materials gave me a clear way to turn those moments into a short, developmentally appropriate peer-education lesson.
+This lesson reminded me that peer support has to be taught inside ordinary classroom moments. It matters when the room gets loud, when someone is confused, when a partner communicates differently, when a new student enters the group, when a child needs more time, or when a learner participates in a way classmates do not expect.
 
-For EDE448, my main takeaway is that positive behavioral support includes peer culture. Students with autism and other complex needs should not have to earn belonging by appearing typical. The classroom should already know how to invite, wait, ask, respect, and include. Kit for Kids gives me a concrete way to teach that before harm happens.
+OAR's Kit for Kids materials gave me a clear, developmentally appropriate way to teach those moments. For EDE448, my main takeaway is that positive behavioral support includes peer culture. A classroom should already know how to invite, wait, ask, respect, and include before harm happens.
 
 \newpage
 \small
