@@ -1,0 +1,19 @@
+\begin{figure}[htbp]
+\centering
+\resizebox{0.96\textwidth}{!}{%
+\begin{tikzpicture}[
+ timelinebox/.style={rounded corners=3mm,draw=DeepBlue,very thick,minimum width=2.35in,minimum height=1in,align=center},
+ arrow/.style={-{Latex[length=3mm]},very thick,draw=PrimaryRed}
+]
+\node[timelinebox,fill=SoftBlue] (a) {\textbf{0--2 minutes}\\Preview first/next/last\\Introduce autism respectfully};
+\node[timelinebox,fill=SoftGreen,right=7mm of a] (b) {\textbf{2--4 minutes}\\Normalize communication\\and sensory differences};
+\node[timelinebox,fill=SoftGold,right=7mm of b] (c) {\textbf{4--8 minutes}\\Teach five peer actions\\Practice a coding scenario};
+\node[timelinebox,fill=SoftLavender,right=7mm of c] (d) {\textbf{8--10 minutes}\\Choose one action\\Explain why it supports belonging};
+\draw[arrow] (a)--(b);
+\draw[arrow] (b)--(c);
+\draw[arrow] (c)--(d);
+\end{tikzpicture}%
+}
+\caption{The 10-minute lesson sequence. The visual timeline reduces uncertainty and connects each teaching move to its purpose.}
+\label{fig:lesson-timeline}
+\end{figure}
